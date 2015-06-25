@@ -1,10 +1,44 @@
-div{
+body{
+	margin: 0;
+	border: 0;
+}
+
+header{
+	height: 50px;
+	width: 300px;
+	border: 0;
+	background-color: #CFCFCF;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header ul li{
+	list-style-type: none;
+	display: inline;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: "Helvetica";
+}
+
+#main div{
 	width: 450px;
 	height: 200px;
 	background-color: blue;
 	opacity: 0.5;
 	color: white;
-	padding: 20px;
+	padding: 15px;
+	margin: 15px;
 	border: 1px solid black;
 	border-radius: 15px;
+}
+
+footer{
+	height: 50px;
+	width: auto;
+	border: 0;
+	background-color: #696969;
+	margin: 0;
 }
