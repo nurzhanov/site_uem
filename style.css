@@ -5,19 +5,25 @@ body{
 
 header{
 	height: 50px;
-	width: 300px;
-	border: 0;
-	background-color: #CFCFCF;
+	width: auto;
+	border-bottom: 1px solid black;
+	padding-top: 3px;
+	padding-right: 10px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-header ul li{
+header .first_ul li{
 	list-style-type: none;
 	display: inline;
 }
 
-header ul li a{
+.s1{
+	float: right;
+}
+
+
+header .first_ul li a{
 	text-decoration: none;
 	color: black;
 	font-family: "Helvetica";
