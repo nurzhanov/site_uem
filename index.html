@@ -2,8 +2,17 @@
 <html>
 <head>
 	<title>UEM</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="stylesheet" type="text/css" href="style/colorbox.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/jquery.colorbox.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.log').colorbox({inline: true; href:"#form_log"});
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -11,12 +20,18 @@
 			<li><a href="/main.php">Main</a></li>
 			<li><a href="/main.php">Main</a></li>
 			<li><a href="/main.php">Main</a></li>
-			<li class="s1"><a href="/log.php">Login</a></li>
+			<li class="s1"><a class="log" href="#">Login</a></li>
 			<span class="s1">&nbsp|&nbsp</span>
-			<li class="s1"><a href="/reg.php">Registration</a></li>
+			<li class="s1"><a href="registration.html">Registration</a></li>
 		</ul>
 	</header>
 	<div id="main">
+		<form id="form_log">
+			<input type="text" placeholder="Login"/><br/>
+			<input type="text" placeholder="Password"/><br/>
+			<input type="checkbox"/><span>Remember me</span><br/>
+			<input type="submit" value="send" />
+		</form>
 		<div>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
